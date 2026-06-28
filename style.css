@@ -1,0 +1,127 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:800px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:24px;
+    padding:50px;
+    text-align:center;
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+}
+
+.title{
+    color:#fff;
+    font-size:2rem;
+    margin-bottom:40px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.quote{
+    color:#f8fafc;
+    font-size:1.8rem;
+    line-height:1.7;
+    font-weight:500;
+    margin-bottom:30px;
+    min-height:120px;
+    transition:.4s ease;
+}
+
+.author{
+    color:#cbd5e1;
+    font-size:1.1rem;
+    font-style:italic;
+    margin-bottom:45px;
+    transition:.4s ease;
+}
+
+button{
+    border:none;
+    outline:none;
+    cursor:pointer;
+    padding:14px 26px;
+    font-size:1rem;
+    border-radius:12px;
+    transition:.3s ease;
+    margin:8px;
+    font-weight:600;
+}
+
+.nwquote{
+    background:#4f46e5;
+    color:white;
+}
+
+.nwquote:hover{
+    background:#4338ca;
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(79,70,229,.35);
+}
+
+.cpybtn{
+    background:transparent;
+    color:white;
+    border:2px solid rgba(255,255,255,.3);
+}
+
+.cpybtn:hover{
+    background:white;
+    color:#111827;
+    transform:translateY(-3px);
+}
+
+button i{
+    margin-right:8px;
+}
+
+.fade{
+    opacity:0;
+    transform:translateY(15px);
+}
+
+.quote,
+.author{
+    transition:opacity .4s ease, transform .4s ease;
+}
+
+@media(max-width:768px){
+
+    .container{
+        padding:35px 25px;
+    }
+
+    .title{
+        font-size:1.7rem;
+    }
+
+    .quote{
+        font-size:1.4rem;
+        min-height:100px;
+    }
+
+    button{
+        width:100%;
+        margin:8px 0;
+    }
+
+}
